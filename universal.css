@@ -1,0 +1,389 @@
+
+/* Link to the fonts on page*/
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&amp;family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 01 - Navigation Bar */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.navbar .container-fluid .navbar-brand {
+    margin-left: 15px;
+}
+
+.navbar {
+    background-color: #8B2331;
+    font-family: 'Domine', serif;
+    font-weight: 500;
+}
+
+.navbar li a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+    color: white;
+    background-color: #00000000;
+}
+
+.navbar li a:hover::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.625rem;
+    background-color: #550d1d;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* || Dropdown Menu */
+
+.dropdown-menu {
+    background-color: #8B2331;
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+    background-color: #550d1d;
+}
+
+.dropdown-menu li a:hover::before {
+    display: none;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: white;
+    background-color: #00000000;
+}
+
+/* || Main Content */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Montserrat;
+    overflow-y: scroll;
+}
+
+a, a:hover {
+    font-weight: 600;
+    color: #8B2331;
+    text-decoration: none;
+}
+
+#left {
+    padding-left: 0px;
+}
+
+hr {
+    margin: 0px;
+}
+
+#right {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.text-border {
+    padding: 25px 15px;
+}
+
+.col-md-6, .col-md-12, .col-lg-6, .starter-template, .container-fluid {
+    padding: 0px;
+}
+
+.col-sm-3 {
+    padding: 0px 3px;
+}
+
+.jumbotron {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100vw;
+    height: 60vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0)), url(https://i.imgur.com/TWHmOQc.jpg);
+    background-position-x: initial, 50%;
+    background-position-y: initial, 15%;
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: fixed;
+}
+
+.row {
+    margin: auto 0px;
+}
+
+.col-md-6 > .inner {
+    padding-right: 0;
+}
+
+.container-fluid .jumbotron {
+    border-radius: 0px;
+}
+
+.text-container {
+    display: inline-block;
+    color: white;
+    margin: 0px;
+    max-width: 50%;
+    text-shadow: 0px 0px 10px #00000085;
+    padding: 15px;
+}
+
+.inner {
+    padding: 0px 15px;
+}
+
+.inner ul {
+    line-height: auto;
+}
+
+.col-md-12 ul {
+    line-height: 16px;
+    max-width: 1024px;
+    background-color: #8B2331;
+    margin: 0px auto;
+    padding: 10px 15px;
+}
+
+.row + .row>.col-md-12 {
+    background-color: #8B2331;
+}
+
+/* || Typography */
+
+#title {
+    font-family: 'Domine', serif;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+#subtitle {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.heading {
+    font-family: 'Domine', serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0px;
+    color: #FFFFFF;
+    background: #8C2232;
+}
+
+.icon-container {
+    padding: 0px 40px;
+}
+
+.button-box { 
+    display: block;
+    padding: 40px 0px;
+    cursor: pointer;
+}
+
+.button-box:hover::before { 
+    content: '';
+    background: #f1f1f1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-40px);
+    z-index: -1;
+}
+
+.button-box a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #8B2331;
+}
+
+.button-text {
+    display: block;
+    line-height: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-family: 'Domine', serif;
+}
+
+/* || Miscellaneuos Elements */
+
+.leaders {
+    padding: 0px;
+    overflow-x: hidden;
+    list-style: none;
+}
+
+.leaders li:before {
+    float: left;
+    width: 0px;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+ ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+ ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+ ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+}
+
+.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white;
+}
+
+.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: white;
+}
+
+.cloud {
+    width: 100%;
+    height: 100%;
+    padding: 15px 7.5px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.cloud div {
+    padding: 3px 0px;
+}
+
+.cloud div a {
+    display: inline-block;
+    text-decoration: none;
+    color: #792426;
+    padding: 5px 10px;
+    width: 24%;
+    border-radius: 10px;
+}
+
+.cloud a:hover {
+    background-color: #792426;
+    color: white;
+}
+
+.box-holder {
+    display: inline-block;
+    float: left;
+    width: 239.5px;
+    position: relative;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-size-adjust: 100%;
+}
+
+.image {
+    width: 100%;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 03 - Footer */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.col-md-12 li {
+    display: inline-block;
+    text-align: center;
+    padding: 3px 1.5px;
+    width: 32.5%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.col-md-12 li a {
+    font-family: 'Domine', serif;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    width: 100%;
+    border-bottom: 1px #A14D5A solid;
+}
+
+.col-md-12 li a:hover {
+    color: white;
+}
+
+.col-md-12 h4 {
+    text-align: center;
+    background-color: #8C2232;
+    color: white;
+    padding: 12px 0px 7px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Domine', serif;
+    font-size: 1.25em;
+}
+
+.version-number {
+    margin-top: 0px;
+    background-color: #000000;
+    color: white;
+    border-top: none;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+.col-md-12 ul {
+    padding: 15px 5.25vw;
+}
+.text-container {
+    max-width: 100%;
+}
+.navbar .container-fluid .navbar-brand {
+    margin-left: 15px;
+}
+.col-md-12 li {
+    width: 100%;
+)
+.inner {
+    padding: 0px 15px;
+}
+.col-sm-6 {
+    padding: 0px 0px;
+}
+}
+
+@media (max-width: 767px) {
+.button-box a {
+     font-size: 12px;
+     overflow: none;
+}
+.icon-container {
+    padding: 20px;
+}
+.cloud div a {
+    width: 49%;
+}
+#title {
+    font-family: 'Domine', serif;
+    font-size: 2em;
+    font-weight: 500;
+}
+.navbar-inverse .navbar-nav li a:hover {
+    background-color: #550d1d;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu li a {
+    color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav li a, .dropdown-menu li a {
+    text-align: center;
+}
+.navbar-inverse .navbar-nav > .open >.dropdown-menu > li a:hover {
+    background-color: #550d1d;
+}
+.navbar-inverse .navbar-nav li a:hover::before {
+    display: none;
+}
+}
+
+@media (min-width: 767px) {
+.navbar .container-fluid .navbar-brand {
+    margin-left: 15px;
+}
+}
